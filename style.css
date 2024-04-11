@@ -1,9 +1,10 @@
+
 *{
     font-family: "Century Gothic";
 }
 body{
     margin: 0;
-    background-color: #1ec9519a
+    /* background-color: #1ec9519a; */
 }
 img{
     width: 100%;
@@ -29,6 +30,7 @@ nav ul li a{
 }
 .article-items{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .item{
@@ -45,10 +47,36 @@ section{
     margin: auto;
 }
 footer{
-    margin-top: 20px;
     background-color: #08b63c;
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
     padding: 20px;
     color: #fff;
+}
+header{
+    background-color: #08b63c;
+}
+
+@media screen and (max-width:1000px) {
+    section{
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width:768px) {
+    .item{
+        width: 40%;
+}
+}
+@media screen and (max-width:600px) {
+    .item{
+        width: 100%;
+}
+}
+@media screen and (max-width:500px) {
+    nav{
+       display: none;
+    }
 }
